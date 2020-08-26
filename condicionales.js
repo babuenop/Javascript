@@ -18,7 +18,3 @@ if (user!=cpu){
   console.log("Empate")
 }
 
-$(function() {
-    $('.back').on('click', function() {
-        flipCard(this.id); //Pass the img id to flipCard
-    }); 
