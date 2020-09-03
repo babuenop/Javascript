@@ -5,6 +5,7 @@ var nombre = 'Alberto'
 var apellido = 'Bueno'
 var edad = '27'
 
+
 // Por convencion en javascript se usa la comilla simpre para agregar un string 
 
 nombre = 'Alberto'
