@@ -24,3 +24,23 @@ function imprimirNombreEnMayuscula({nombre}) {
 imprimirNombreEnMayuscula(alberto)
 imprimirNombreEnMayuscula(dario)
 imprimirNombreEnMayuscula({ nombre:'Pepito'})
+
+// Desestructurando objetos 
+function imprimirNombreEnMayusculaOpcion2 (){
+    // var nombre = persona.nombre
+    var {nombre} = persona
+    console.log(nombre.toUpperCase())
+}
+
+// imprimirNombreEnMayusculaOpcion2(alberto)
+// imprimirNombreEnMayusculaOpcion2(dario)
+// imprimirNombreEnMayusculaOpcion2({ nombre:'Pepito'})
+
+function cumpleaños (persona){
+    return {
+        ...persona,
+        edad: persona.edad + 1
+    }
+}
+
+cumpleaños (alberto)
