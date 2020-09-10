@@ -44,11 +44,12 @@ var alberto = {
 
 console.log(`Al inicio del año ${alberto.nombre} pesa ${alberto.peso} kilogramos`)
 const INCREMENTO_PESO = 0.200 
+const DIAS = 365
 
 const aumentarDePeso = (persona, incremento)=> persona.peso += INCREMENTO_PESO
 const adelgazar = (persona, incremento)=> persona.peso -= INCREMENTO_PESO
 
-for (var i=1; i<=365; i++){
+for (var i=1; i<=DIAS; i++){
     var random = Math.random()
     if(random<0.25){
         aumentarDePeso(alberto)
