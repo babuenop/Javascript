@@ -58,3 +58,30 @@ let education = ['david', ...team1, ...team2]
 console.log(education)
 
 
+// Diferencias entre let y var 
+{
+    let globallet = 'prueba'
+}
+{
+    var globalvar = 'prueba1'
+}
+//console.log(globallet) al ejecutar este codigo no me va a permitir llamar a let por que pertenece a otro scope
+console.log(globalvar)
+
+// CONST es una constante que no va a cambiar su valor en el tiempo
+const a = 'b'
+a = 'a' // --> TypeError: Assignment to constant variable.
+
+/* ARRAYS */
+let name ='Alberto'
+let age ='37'
+
+//es5
+obj1 ={name:name, age:age}
+console.log(obj1)
+
+obj2 = {name,edad}
+console.log(obj2)
+
+
+
