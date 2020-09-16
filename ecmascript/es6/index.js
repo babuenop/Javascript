@@ -80,8 +80,45 @@ let age ='37'
 obj1 ={name:name, age:age}
 console.log(obj1)
 
+//es6
 obj2 = {name,edad}
 console.log(obj2)
 
+//Funciones de tipo flecha 
+const names =[
+    {name: 'Oscar', age:32}.
+    {name: 'Alberto', age:23}
+]
 
+let listOfNames = names.map (function(item){
+    console.log(item.name)
+})
 
+let listOfNames2 = names.map(item=> console.log(item.name))
+
+const listOfNames3 = (name, age, country) =>{
+    ...
+}
+
+const listOfNames4 = name =>{
+    ...
+}
+
+const square = num => num * num
+
+//Javasctipt no es un lenguaje sincronico
+
+/* Promesas */
+const helloPromise = ()=>{
+    return new Promise((resolve, reject) => {
+        if (true){
+            resolve('hey')
+        } else {
+            reject('Ups!!')
+        }
+    })
+}
+
+helloPromise()
+.then(Response => console.log(Response))
+.catch(error=>console.log(error))
