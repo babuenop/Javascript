@@ -28,8 +28,8 @@ console.log(epic2)
 let lorem = `Una frase epica que separabamos el un \n` + `segundo reglon una frase`
 
 //con es6 
-let lorem2= `Utilizando las comillas francesas podemos utilizar una frese
-con un segundo saldo de linea con es6`
+let lorem2= `Utilizando las comillas francesas podemos utilizar una 
+frase con un segundo saldo de linea con es6`
 
 console.log(lorem)
 console.log(lorem2)
@@ -84,9 +84,9 @@ console.log(obj1)
 obj2 = {name,edad}
 console.log(obj2)
 
-//Funciones de tipo flecha 
+//Funciones de tipo flecha - Arrow Functions
 const names =[
-    {name: 'Oscar', age:32}.
+    {name: 'Oscar', age:32},
     {name: 'Alberto', age:23}
 ]
 
@@ -97,11 +97,11 @@ let listOfNames = names.map (function(item){
 let listOfNames2 = names.map(item=> console.log(item.name))
 
 const listOfNames3 = (name, age, country) =>{
-    ...
+    //...
 }
 
 const listOfNames4 = name =>{
-    ...
+    //...
 }
 
 const square = num => num * num
