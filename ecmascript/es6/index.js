@@ -122,3 +122,21 @@ const helloPromise = ()=>{
 helloPromise()
 .then(Response => console.log(Response))
 .catch(error=>console.log(error))
+
+
+import {hello} from './module'
+
+hello ()
+
+function* helloworld(){
+    if (true){
+        yield 'Hello,   '
+    }
+    if (true){
+        yield 'World'
+    }
+}
+
+const generatorHello = helloworld()
+console.log(generatorHello.next().value)
+console.log(generatorHello.next().value)
